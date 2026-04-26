@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reportes Académicos - SIGAM</title>
+  <link rel="stylesheet" href="../estilos/admin.css">
+</head>
+<body>
+  <header>
+    <div class="logo-nombre">
+      <img src="../assets/logo.svg" alt="SIGAM Logo">
+      <h2>Reportes Académicos - SIGAM</h2>
+    </div>
+    <nav>
+      <a href="panel.html">Inicio</a>
+      <a href="estudiantes.html">Estudiantes</a>
+      <a href="configuracion.html">Configuración</a>
+      <a href="../index.html">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reportes">
+      <h3>Generación de Reportes</h3>
+      <div class="contenedor-reportes">
+        <label for="tipo-reporte">Seleccione el tipo de reporte:</label>
+        <select id="tipo-reporte">
+          <option value="matriculas">Matrículas por periodo</option>
+          <option value="asistencia">Asistencia por programa</option>
+          <option value="rendimiento">Rendimiento académico</option>
+          <option value="uso">Uso del sistema</option>
+        </select>
+        <button class="btn-generar">Generar Reporte</button>
+      </div>
+
+      <div class="resultado-reporte">
+        <h4>Vista previa del reporte</h4>
+        <img src="../assets/reporte-demo.png" alt="Ejemplo de reporte" class="img-reporte">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

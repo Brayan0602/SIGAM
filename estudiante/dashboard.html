@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel del Estudiante - SIGAM</title>
+  <link rel="stylesheet" href="../estilos/dashboard.css">
+</head>
+<body>
+  <header>
+    <!-- Logo incrustado directamente para evitar errores -->
+    <div class="logo-nombre">
+      <svg width="70" height="70" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="#0056B3" />
+        <path d="M40 70 L100 90 L160 70 L100 120 Z" fill="white" />
+        <circle cx="60" cy="100" r="5" fill="#00B386" />
+        <circle cx="140" cy="100" r="5" fill="#00B386" />
+        <line x1="60" y1="100" x2="100" y2="120" stroke="#00B386" stroke-width="2"/>
+        <line x1="140" y1="100" x2="100" y2="120" stroke="#00B386" stroke-width="2"/>
+      </svg>
+      <h2>SIGAM - Panel Estudiante</h2>
+    </div>
+
+    <nav>
+      <a href="matricula.html">Matricular Asignaturas</a>
+      <a href="horario.html">Mi Horario</a>
+      <a href="perfil.html">Mi Perfil</a>
+      <a href="../index.html" class="cerrar">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="bienvenida">
+      <h3>Bienvenido, Estudiante</h3>
+      <p>Desde este panel podrá realizar su matrícula, revisar su horario y editar su información personal.</p>
+    </section>
+
+    <section class="acciones">
+      <div class="card">
+        <h4>📘 Matricular Asignaturas</h4>
+        <p>Seleccione y gestione sus asignaturas para el periodo actual.</p>
+        <a href="matricula.html" class="btn">Ir a Matrícula</a>
+      </div>
+
+      <div class="card">
+        <h4>🕒 Mi Horario</h4>
+        <p>Consulte su horario académico completo por semana.</p>
+        <a href="horario.html" class="btn">Ver Horario</a>
+      </div>
+
+      <div class="card">
+        <h4>👤 Mi Perfil</h4>
+        <p>Actualice su información personal y de contacto.</p>
+        <a href="perfil.html" class="btn">Ver Perfil</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
+
+

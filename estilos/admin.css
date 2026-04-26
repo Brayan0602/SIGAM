@@ -1,0 +1,142 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background-color: #f6f9fc;
+  color: #333;
+}
+
+header {
+  background-color: #004A99;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  flex-wrap: wrap;
+}
+
+.logo-nombre {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-nombre h2 {
+  margin: 0;
+  font-size: 1.6em;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.cerrar {
+  background-color: #ff4b4b;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a.cerrar:hover {
+  background-color: #cc0000;
+}
+
+main {
+  padding: 40px;
+}
+
+.resumen {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.resumen h3 {
+  color: #004A99;
+  font-size: 1.8em;
+}
+
+.resumen p {
+  font-size: 1em;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.tarjeta {
+  width: 250px;
+  padding: 25px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.tarjeta.azul { background-color: #0056B3; }
+.tarjeta.verde { background-color: #00B386; }
+.tarjeta.naranja { background-color: #FFA500; }
+
+.acciones {
+  text-align: center;
+}
+
+.cards-acciones {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card h4 {
+  color: #004A99;
+}
+
+.card p {
+  font-size: 0.95em;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #00B386;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #008F73;
+}

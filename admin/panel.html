@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Administrador - SIGAM</title>
+  <link rel="stylesheet" href="../estilos/admin.css">
+</head>
+<body>
+  <header>
+    <div class="logo-nombre">
+      <!-- SVG incrustado para evitar errores de carga -->
+      <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="90" fill="#0056B3" />
+        <path d="M40 70 L100 90 L160 70 L100 120 Z" fill="white" />
+        <circle cx="60" cy="100" r="5" fill="#00B386" />
+        <circle cx="140" cy="100" r="5" fill="#00B386" />
+        <line x1="60" y1="100" x2="100" y2="120" stroke="#00B386" stroke-width="2"/>
+        <line x1="140" y1="100" x2="100" y2="120" stroke="#00B386" stroke-width="2"/>
+      </svg>
+      <h2>SIGAM - Panel de Administración</h2>
+    </div>
+    <nav>
+      <a href="estudiantes.html">👨‍🎓 Gestión de Estudiantes</a>
+      <a href="reportes.html">📊 Reportes</a>
+      <a href="configuracion.html">⚙️ Configuración</a>
+      <a href="../index.html" class="cerrar">Cerrar Sesión</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="resumen">
+      <h3>Resumen General del Sistema</h3>
+      <p>Visualice las métricas principales del sistema académico y acceda rápidamente a las funciones administrativas.</p>
+      <div class="tarjetas">
+        <div class="tarjeta azul">
+          <h4>Total Estudiantes</h4>
+          <p>350</p>
+        </div>
+        <div class="tarjeta verde">
+          <h4>Matrículas Pendientes</h4>
+          <p>24</p>
+        </div>
+        <div class="tarjeta naranja">
+          <h4>Asignaturas Activas</h4>
+          <p>18</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="acciones">
+      <h3>Acciones Rápidas</h3>
+      <div class="cards-acciones">
+        <div class="card">
+          <h4>📘 Registrar Nuevo Estudiante</h4>
+          <p>Agregue estudiantes al sistema y asigne sus programas académicos.</p>
+          <a href="estudiantes.html" class="btn">Ir a Gestión</a>
+        </div>
+
+        <div class="card">
+          <h4>📅 Generar Reporte</h4>
+          <p>Genere reportes de matrículas, asistencia o rendimiento académico.</p>
+          <a href="reportes.html" class="btn">Ver Reportes</a>
+        </div>
+
+        <div class="card">
+          <h4>⚙️ Configurar Sistema</h4>
+          <p>Gestione usuarios, permisos y parámetros del sistema SIGAM.</p>
+          <a href="configuracion.html" class="btn">Ir a Configuración</a>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

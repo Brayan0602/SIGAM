@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SIGAM | Inicio de Sesión</title>
+  <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+  <div class="logo-nombre">
+  <svg width="90" height="90" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="100" cy="100" r="90" fill="#0056B3" />
+    <path d="M40 70 L100 90 L160 70 L100 120 Z" fill="white" />
+    <circle cx="60" cy="100" r="5" fill="#00B386" />
+    <circle cx="140" cy="100" r="5" fill="#00B386" />
+    <line x1="60" y1="100" x2="100" y2="120" stroke="#00B386" stroke-width="2"/>
+    <line x1="140" y1="100" x2="100" y2="120" stroke="#00B386" stroke-width="2"/>
+  </svg>
+  <h1 class="nombre-sigam">SIGAM</h1>
+    </div>
+
+    <form id="loginForm">
+      <input type="text" id="usuario" placeholder="Usuario" required>
+      <input type="password" id="clave" placeholder="Contraseña" required>
+      <select id="rol" required>
+        <option value="">Seleccione su rol</option>
+        <option value="estudiante">Estudiante</option>
+        <option value="admin">Administrador Académico</option>
+      </select>
+      <button type="submit">Ingresar</button>
+    </form>
+  </div>
+
+  <script src="scripts/login.js"></script>
+</body>
+</html>
