@@ -8,6 +8,7 @@
 </head>
 <body>
   <header>
+    <p id="bienvenida" style="margin:10px;"></p>
     <div class="logo-nombre">
       <!-- SVG incrustado para evitar errores de carga -->
       <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -24,7 +25,7 @@
       <a href="estudiantes.html">👨‍🎓 Gestión de Estudiantes</a>
       <a href="reportes.html">📊 Reportes</a>
       <a href="configuracion.html">⚙️ Configuración</a>
-      <a href="../index.html" class="cerrar">Cerrar Sesión</a>
+    <a href="#" class="cerrar" onclick="cerrarSesion()">Cerrar Sesión</a>
     </nav>
   </header>
 
@@ -35,15 +36,15 @@
       <div class="tarjetas">
         <div class="tarjeta azul">
           <h4>Total Estudiantes</h4>
-          <p>350</p>
+          <p id="totalEstudiantes"></p>
         </div>
         <div class="tarjeta verde">
           <h4>Matrículas Pendientes</h4>
-          <p>24</p>
+          <p id="matriculas"></p>
         </div>
         <div class="tarjeta naranja">
           <h4>Asignaturas Activas</h4>
-          <p>18</p>
+          <p id="asignaturas"></p>
         </div>
       </div>
     </section>
@@ -71,5 +72,6 @@
       </div>
     </section>
   </main>
+  <script src="../scripts/admin.js"></script>
 </body>
 </html>

@@ -2,21 +2,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const rol = localStorage.getItem("rol");
 
-  // VALIDACIÓN DE ACCESO
-  if (rol !== "admin") {
+  // VALIDAR ACCESO
+  if (rol !== "estudiante") {
     alert("Acceso no autorizado");
     window.location.href = "../index.html";
     return;
   }
 
-  // BIENVENIDA
+  // BIENVENIDA DINÁMICA
   const usuario = localStorage.getItem("usuario");
-  document.getElementById("bienvenida").textContent = "Bienvenido, " + usuario;
-
-  // DATOS SIMULADOS
-  document.getElementById("totalEstudiantes").textContent = 350;
-  document.getElementById("matriculas").textContent = 24;
-  document.getElementById("asignaturas").textContent = 18;
+  document.getElementById("bienvenidaUsuario").textContent = "Bienvenido, " + usuario;
 
 });
 

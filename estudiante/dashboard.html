@@ -25,13 +25,13 @@
       <a href="matricula.html">Matricular Asignaturas</a>
       <a href="horario.html">Mi Horario</a>
       <a href="perfil.html">Mi Perfil</a>
-      <a href="../index.html" class="cerrar">Cerrar Sesión</a>
+      <a href="#" class="cerrar" onclick="cerrarSesion()">Cerrar Sesión</a>
     </nav>
   </header>
 
   <main>
     <section class="bienvenida">
-      <h3>Bienvenido, Estudiante</h3>
+      <h3 id="bienvenidaUsuario"></h3>
       <p>Desde este panel podrá realizar su matrícula, revisar su horario y editar su información personal.</p>
     </section>
 
@@ -53,8 +53,14 @@
         <p>Actualice su información personal y de contacto.</p>
         <a href="perfil.html" class="btn">Ver Perfil</a>
       </div>
+
+      <div class="tarjeta">
+       <h4>Asignaturas inscritas</h4>
+       <p>5</p>
+      </div>
     </section>
   </main>
+  <script src="../scripts/estudiante.js"></script>
 </body>
 </html>
 
